@@ -24,6 +24,7 @@ class Student
     #self.send("bio=", attributes_hash[:bio])
      attributes_hash.each do |k, v|
       self.send(("#{k}="), v)
+    end
   end
 
   def self.all
